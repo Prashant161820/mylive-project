@@ -70,7 +70,7 @@ const Mybasic = () => {
                             style={{ resize: "none" }} rows={4} maxLength={200} onChange={obj=>setabout(obj.target.value)} value={about}></textarea>
 
                         </div>
-                        <div className="card-footer bg-secondary text-white text-center">
+                        <div className="card-footer  text-white text-center">
                             <button className="btn btn-danger mt-2 mb-2" onClick={save}>Save & Continue</button>
                         </div>
                     </div>
