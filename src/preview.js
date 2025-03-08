@@ -32,7 +32,7 @@ const FinalPreview = () => {
                             </table>
                         </div>
                         <div className="card-footer  text-white ">
-                            <h4><Link to="/myedu" className="text-decoration-none"><i className="fa fa-edit"></i>Edit</Link></h4>
+                            <h4><Link to="/mybasic" className="text-decoration-none"><i className="fa fa-edit"></i>Edit</Link></h4>
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ const FinalPreview = () => {
 
                         </div>
                         <div className="card-footer  text-white ">
-                            <h4><Link to="/myedu" className="text-decoration-none"><i className="fa fa-edit"></i>Edit</Link></h4>
+                            <h4><Link to="/mycontact" className="text-decoration-none"><i className="fa fa-edit"></i>Edit</Link></h4>
                         </div>
                     </div>
                 </div>
@@ -91,12 +91,11 @@ const FinalPreview = () => {
                                     <tr><td>List of skills:</td><td>{skilldata.skills}</td></tr>
                                 </tbody>
 
-
                             </table>
 
                         </div>
                         <div className="card-footer  text-white ">
-                            <h4><Link to="/myedu" className="text-decoration-none"><i className="fa fa-edit"></i>Edit</Link></h4>
+                            <h4><Link to="/myskill" className="text-decoration-none"><i className="fa fa-edit"></i>Edit</Link></h4>
                         </div>
                     </div>
                 </div>
@@ -117,7 +116,7 @@ const FinalPreview = () => {
                             </table>
                         </div>
                         <div className="card-footer  text-white ">
-                            <h4><Link to="/myedu" className="text-decoration-none"><i className="fa fa-edit"></i>Edit</Link></h4>
+                            <h4><Link to="/myproject" className="text-decoration-none"><i className="fa fa-edit"></i>Edit</Link></h4>
                         </div>
                     </div>
                 </div>
@@ -136,10 +135,13 @@ const FinalPreview = () => {
                             </table>
                         </div>
                         <div className="card-footer  text-white ">
-                            <h4><Link to="/myedu" className="text-decoration-none"><i className="fa fa-edit"></i>Edit</Link></h4>
+                            <h4><Link to="/myexp" className="text-decoration-none"><i className="fa fa-edit"></i>Edit</Link></h4>
                         </div>
                     </div>
                 </div>
+                <div className="col-xl-12 text-center">
+                    <button className="btn btn-danger">Submit My Details</button>
+                    </div>
 
 
             </div>

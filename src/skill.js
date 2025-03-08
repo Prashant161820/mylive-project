@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import LeftNav from "./navigation";
 import { useState } from "react";
+import swal from "sweetalert";
 
 const Myskill = () => {
 
@@ -11,12 +12,12 @@ const Myskill = () => {
 
     const saveskill =()=>{
         let skillinfo={
-            "skills":"skill"
+            "skills":skill
         };
 
         let mydat ={type:"skill",info:skillinfo};
         dispatchskill(mydat);
-        alert("skills details saved successfully")
+        swal("Saved success","Your Skill details saved successfully..","success")
     }
 
 

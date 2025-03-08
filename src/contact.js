@@ -1,6 +1,7 @@
 import { useDispatch,useSelector } from "react-redux";
 import LeftNav from "./navigation";
 import { useState } from "react";
+import swal from "sweetalert";
 const Mycontact = () => {
 
 
@@ -26,7 +27,7 @@ const Mycontact = () => {
           };
           let mycontact ={type:"contact",info:contactinfo};
           dispatchcon(mycontact);
-          alert("saved")
+          swal("Saved success","Your Contact details saved successfully..","success")
         
     }
 

@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import LeftNav from "./navigation";
 import { useState } from "react";
+import swal from "sweetalert";
 
 const Myeducation = () => {
 
@@ -23,7 +24,7 @@ const Myeducation = () => {
         };
         let myedu = { type:"edu",info:eduinfo};
         dispatchedu(myedu);
-        alert("education details saved successfully")
+        swal("Saved success","Your Education details saved successfully..","success")
 
     }
 

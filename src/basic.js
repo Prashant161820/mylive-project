@@ -1,6 +1,7 @@
 import LeftNav from "./navigation";
 import { useDispatch,useSelector } from "react-redux";
 import { useState } from "react";
+import swal from "sweetalert";
 const Mybasic = () => {
 
 
@@ -27,7 +28,7 @@ const Mybasic = () => {
 
        let mydata ={type:"basic",info:userinfo};
        dispatch(mydata);
-       alert("basic details saved successfully")
+       swal("Saved success","Your Basic details saved successfully..","success")
     }
 
      
@@ -67,10 +68,10 @@ const Mybasic = () => {
                             </select>
                             <label>About Yourself:</label>
                             <textarea className="form-control border-2 mt-1 mb-3" placeholder="Enter message" 
-                            style={{ resize: "none" }} rows={4} maxLength={200} onChange={obj=>setabout(obj.target.value)} value={about}></textarea>
+                            style={{ resize: "none" }} rows={3} maxLength={200} onChange={obj=>setabout(obj.target.value)} value={about}></textarea>
 
                         </div>
-                        <div className="card-footer  text-white text-center">
+                        <div className="card-footer bg-secondary text-white text-center">
                             <button className="btn btn-danger mt-2 mb-2" onClick={save}>Save & Continue</button>
                         </div>
                     </div>

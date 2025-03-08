@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import LeftNav from "./navigation";
 import { useState } from "react";
+import swal from "sweetalert";
 
 const Myproject = () => {
     let projectdata=useSelector(state=>state.Mypro1);
@@ -22,7 +23,7 @@ const Myproject = () => {
 
         let mypro={type:"pro",info:proinfo};
         dispatchpro(mypro);
-        alert("project saved ")
+        swal("Saved success","Your Project details saved successfully..","success")
 
     }
 
